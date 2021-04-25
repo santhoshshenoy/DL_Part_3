@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------------------------------------
+                                Instruction to run the app
+--------------------------------------------------------------------------------------------------------------
+
+1.Create a seperate conda enironment using conda "create -n streamlit python=3.8"
+2.Activate the conda environment "conda activate streamlit"
+3.Install all the dependencies using the accompanying requirements.txt file "pip install -r requirements.txt"
+4.Unzip the folder DNN_project-1
+5.At the command prompt run "streamlit run NNAPP-1.py". This will open the app in the default browser.
+6.Try EDA, Regression and Classification examples.
+
+Note: 
+1) The demo is available at http://34.70.58.49:8085/. Please feel free to play around and provide feedback at Santhosh.shenoy34@gmail.com
+
+2) You can use the hyper parameters below for regression and classification. 
+ Copy hyper parameters and paste them into the text area under regression and classification.
+
+
+Hyperparameters Regression:
+===========================
+
+{'num_layers': 7,
+ 'arch': 'D A B',
+ 'neurons_per_layer': [256, 32, 1000, 1000, 10, 32, 256],
+ 'activation': 'relu',
+ 'kernel_init': 'uniform',
+ 'drop_rate_per_layer': [0.15872829858660079,
+  0.124404021283663,
+  0.1191444759931971,
+  0.6775070097550181,
+  0.32337913815894676,
+  0.13903817315530098,
+  0.39426663755264946],
+ 'opts': {'optimizer': 'Adam',
+  'learning_rate': 0.00035718724976417535,
+  'epsilon': 3.5043808140212366e-05,
+  'beta_1': 0.9834335585011938,
+  'beta_2': 0.8583875028859446},
+ 'batch_size': 10,
+ 'n_epochs': 100}
+
+
+Hyperparameters Classification:
+==============================
+
+{'num_layers': 6,
+ 'arch': 'A D B',
+ 'neurons_per_layer': [64, 256, 1000, 10, 1000, 1000],
+ 'activation': 'relu',
+ 'kernel_init': 'lecun_uniform',
+ 'drop_rate_per_layer': [0.11769241744475195,
+  0.1203918426967813,
+  0.3079277845699331,
+  0.16249139281479208,
+  0.3503972703488872,
+  0.5575415438784195],
+ 'opts': {'optimizer': 'Adam',
+  'learning_rate': 0.000609593339702459,
+  'epsilon': 4.226899030767284e-06,
+  'beta_1': 0.9537281643103777,
+  'beta_2': 0.9390376626945334},
+ 'batch_size': 30,
+ 'n_epochs': 150}
+
+
+--------------------------------------------------------------------------------------------------------------
+
